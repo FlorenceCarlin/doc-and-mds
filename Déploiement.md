@@ -12,8 +12,8 @@
 5. Créer l'utilisateur dans mysql et lui donner les droits sur la BDD :
    - mysql est normalement déjà installé, on peut donc utiliser : `sudo mysql`
    - Lancer les commandes suivantes (sans oublier les ;) : 
-     - `CREATE USER 'apocalypse'@'localhost' IDENTIFIED BY '6q595XmCKm';`
-     - `GRANT ALL PRIVILEGES ON *.* TO 'apocalypse'@'localhost' WITH GRANT OPTION;`
+     - `CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';`
+     - `GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost';`
    - on sort avec : `exit`
 6. Faire un `composer install`
    (On obtient une erreur mais attention : ne pas faire de composer update pour éviter les problèmes de versions entre le développement en local et le déploiement sur le serveur)
